@@ -148,7 +148,7 @@ main {
 }
 /*FACT SECTION STYLING*/
 .fact-section {
-  margin-top: 130px;
+  margin: 130px 0 180px 0;
 }
 .fact-title {
   font-weight: bold;
@@ -200,4 +200,44 @@ main {
   .fact-description {
     padding-left: 0.5rem;
   }
+}
+/*SPONSOR SECTION STYLING*/
+.sponsor-info {
+  max-width: 542px;
+  margin: 0 auto 50px auto;
+}
+.sponsor-title {
+  font-weight: bold;
+  font-size: 2.81rem;
+  margin: 0;
+  text-align: center;
+}
+.sponsor-description {
+  text-align: center;
+}
+.sponsor-lists {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-lists img {
+  filter: grayscale(1);
+}
+/*SPONSON SECTION RESPONSIVE*/
+@media screen and (max-width: 576px) {
+  .sponsor-lists {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
+}
+/*FOOTER STYLING*/
+footer {
+  max-width: 1140px;
+  margin: 130px auto 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+.footer-description {
+  font-size: 1.25rem;
+  padding: 40px 0;
 }
